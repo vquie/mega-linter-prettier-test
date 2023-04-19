@@ -1,0 +1,28 @@
+---
+repositories:
+  - name: "prometheus-community"
+    url: "https://prometheus-community.github.io/helm-charts"
+
+releases:
+
+  - name: "kube-prometheus-stack"
+    namespace: "monitoring"
+    labels:
+      chart: "kube-prometheus-stack"
+      repo: "prometheus-community"
+      component: "prometheus"
+      namespace: "monitoring"
+      vendor: "prometheus-community"
+    chart: "prometheus-community/kube-prometheus-stack"
+    version: "45.8.1"
+    wait: true
+    timeout: 600
+    installed: {{ .Values.installed }}
+    disableValidationOnInstall: true
+    values:
+      - alertmanager:
+          enabled: {{ .Values.alertmanager.enabled }}
+        grafana:
+          enabled: {{ .Values.grafana.enabled }}
+        prometheus:
+          enabled: {{ .Values.prometheus.enabled }}

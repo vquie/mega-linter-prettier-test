@@ -1,0 +1,45 @@
+---
+
+helmDefaults:
+  # when using helm 3.2+, automatically create release namespaces if they do not exist (default true)
+  createNamespace: true
+
+# If set to "Error", return an error when a subhelmfile points to a
+# non-existent path. The default behavior is to print a warning and continue.
+missingFileHandler: "Error"
+
+environments:
+  prod:
+    values:
+      - prometheus:
+          scrape_interval: "30s"
+          retention: "185d" # := 6 months
+          retention_size: "145GB"
+          storage_volume_size: "150Gi"
+    secrets:
+      - ./secrets/secrets.prod.yaml
+  staging:
+    values:
+      - prometheus:
+          scrape_interval: "30s"
+          retention: "185d" # := 6 months
+          retention_size: "145GB"
+          storage_volume_size: "150Gi"
+
+# Ordered list of releases.
+helmfiles:
+
+  # Prometheus Stack (Prom + Grafana + AlertManager)
+  - path: 'releases/kube-prometheus-stack/helmfile.yaml'
+    values:
+      - installed: true
+      - alertmanager:
+          enabled: true
+      - grafana:
+          enabled: true
+      - prometheus:
+          enabled: true
+          replicas: 2
+          scrape_interval: {{ .Values.prometheus.scrape_interval | quote }}
+          retention: {{ .Values.prometheus.retention | quote }}
+          retention_size: {{ .Values.prometheus.retention_size | quote }}

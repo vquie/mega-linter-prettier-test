@@ -1,0 +1,181 @@
+----------------------------------------------------------------------------------------------------
+------------------------------------ MegaLinter, by OX Security ------------------------------------
+----------------------------------------------------------------------------------------------------
+ - Image Creation Date: 2023-04-03T18:43:32Z
+ - Image Revision: 93700f8c21c59ea784a32abe23896e49e54463b8
+ - Image Version: v6.22.2
+----------------------------------------------------------------------------------------------------
+The MegaLinter documentation can be found at:
+ - https://megalinter.io/6.22.2
+----------------------------------------------------------------------------------------------------
+MegaLinter initialization
+APPLY_FIXES=all
+ARM_TTK_PSD1=/opt/microsoft/arm-ttk-master/arm-ttk/arm-ttk.psd1
+BUILD_DATE=2023-04-03T18:43:32Z
+BUILD_REVISION=93700f8c21c59ea784a32abe23896e49e54463b8
+BUILD_VERSION=v6.22.2
+CLEAR_REPORT_FOLDER=True
+ENABLE_LINTERS=['YAML_PRETTIER']
+GOPATH=/go
+GOROOT=/usr/lib/go
+GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D
+HOME=/root
+HOSTNAME=ce9d4f7b051e
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+KICS_LIBRARIES_PATH=/opt/kics/assets/libraries
+KICS_QUERIES_PATH=/opt/kics/assets/queries
+LANG=C.UTF-8
+LOG_LEVEL=DEBUG
+MEGALINTER_CONFIG=.mega-linter.yml
+MEGALINTER_FLAVOR=all
+NODE_ENV=production
+NODE_OPTIONS=--max-old-space-size=8192
+NODE_PATH=/node-deps/node_modules
+PATH=~/.raku/bin:/opt/rakudo-pkg/bin:/opt/rakudo-pkg/share/perl6/site/bin:/root/.composer/vendor/bin:/usr/lib/jvm/java-11-openjdk/bin:/root/.cargo/bin:/node-deps/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/go/bin:/go/bin:/venvs/ansible-lint/bin:/venvs/cpplint/bin:/venvs/cfn-lint/bin:/venvs/djlint/bin:/venvs/pylint/bin:/venvs/black/bin:/venvs/flake8/bin:/venvs/isort/bin:/venvs/bandit/bin:/venvs/mypy/bin:/venvs/pyright/bin:/venvs/ruff/bin:/venvs/checkov/bin:/venvs/semgrep/bin:/venvs/rst-lint/bin:/venvs/rstcheck/bin:/venvs/rstfmt/bin:/venvs/snakemake/bin:/venvs/snakefmt/bin:/venvs/proselint/bin:/venvs/sqlfluff/bin:/venvs/yamllint/bin:/root/.dotnet/tools:/usr/share/dotnet
+PRINT_ALL_FILES=True
+PWD=/
+PYTHONPATH=:/
+PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637
+PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py
+PYTHON_PIP_VERSION=22.3.1
+PYTHON_SETUPTOOLS_VERSION=65.5.1
+PYTHON_VERSION=3.11.2
+SHLVL=1
+SHOW_ELAPSED_TIME=True
+SKIP_CLI_LINT_MODES=project
+_=/usr/local/bin/python
+----------------------------------------------------------------------------------------------------
+
+[Pre] No commands declared in user configuration
+ANSIBLE_ANSIBLE_LINT has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+COPYPASTE_JSCPD has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+JSON_NPM_PACKAGE_JSON_LINT has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+KUBERNETES_HELM has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+MARKDOWN_REMARK_LINT has been temporary disabled in MegaLinter, please use a previous MegaLinter version or wait for the next one !
+REPOSITORY_CHECKOV has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_DEVSKIM has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_DUSTILOCK has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_GIT_DIFF has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_GITLEAKS has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_GOODCHECK has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_SECRETLINT has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_SEMGREP has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_SYFT has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+REPOSITORY_TRIVY has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+RUST_CLIPPY has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+SALESFORCE_SFDX_SCANNER_APEX has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+SALESFORCE_SFDX_SCANNER_AURA has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+SALESFORCE_SFDX_SCANNER_LWC has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+SWIFT_SWIFTLINT has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+TERRAFORM_TERRASCAN has been skipped because its CLI lint mode {linter.cli_lint_mode} is in SKIP_CLI_LINT_MODES variable.
+Skipped linters: ACTION_ACTIONLINT, ANSIBLE_ANSIBLE_LINT, ARM_ARM_TTK, BASH_EXEC, BASH_SHELLCHECK, BASH_SHFMT, BICEP_BICEP_LINTER, CLOJURE_CLJ_KONDO, CLOUDFORMATION_CFN_LINT, COFFEE_COFFEELINT, COPYPASTE_JSCPD, CPP_CPPLINT, CSHARP_CSHARPIER, CSHARP_DOTNET_FORMAT, CSS_SCSS_LINT, CSS_STYLELINT, C_CPPLINT, DART_DARTANALYZER, DOCKERFILE_HADOLINT, EDITORCONFIG_EDITORCONFIG_CHECKER, ENV_DOTENV_LINTER, GHERKIN_GHERKIN_LINT, GO_GOLANGCI_LINT, GO_REVIVE, GRAPHQL_GRAPHQL_SCHEMA_LINTER, GROOVY_NPM_GROOVY_LINT, HTML_DJLINT, HTML_HTMLHINT, JAVASCRIPT_ES, JAVASCRIPT_PRETTIER, JAVASCRIPT_STANDARD, JAVA_CHECKSTYLE, JAVA_PMD, JSON_ESLINT_PLUGIN_JSONC, JSON_JSONLINT, JSON_NPM_PACKAGE_JSON_LINT, JSON_PRETTIER, JSON_V8R, JSX_ESLINT, KOTLIN_KTLINT, KUBERNETES_HELM, KUBERNETES_KUBECONFORM, KUBERNETES_KUBEVAL, LATEX_CHKTEX, LUA_LUACHECK, MAKEFILE_CHECKMAKE, MARKDOWN_MARKDOWNLINT, MARKDOWN_MARKDOWN_LINK_CHECK, MARKDOWN_MARKDOWN_TABLE_FORMATTER, MARKDOWN_REMARK_LINT, OPENAPI_SPECTRAL, PERL_PERLCRITIC, PHP_PHPCS, PHP_PHPLINT, PHP_PHPSTAN, PHP_PSALM, POWERSHELL_POWERSHELL, POWERSHELL_POWERSHELL_FORMATTER, PROTOBUF_PROTOLINT, PUPPET_PUPPET_LINT, PYTHON_BANDIT, PYTHON_BLACK, PYTHON_FLAKE8, PYTHON_ISORT, PYTHON_MYPY, PYTHON_PYLINT, PYTHON_PYRIGHT, PYTHON_RUFF, RAKU_RAKU, REPOSITORY_CHECKOV, REPOSITORY_DEVSKIM, REPOSITORY_DUSTILOCK, REPOSITORY_GITLEAKS, REPOSITORY_GIT_DIFF, REPOSITORY_GOODCHECK, REPOSITORY_SECRETLINT, REPOSITORY_SEMGREP, REPOSITORY_SYFT, REPOSITORY_TRIVY, RST_RSTCHECK, RST_RSTFMT, RST_RST_LINT, RUBY_RUBOCOP, RUST_CLIPPY, R_LINTR, SALESFORCE_SFDX_SCANNER_APEX, SALESFORCE_SFDX_SCANNER_AURA, SALESFORCE_SFDX_SCANNER_LWC, SCALA_SCALAFIX, SNAKEMAKE_LINT, SNAKEMAKE_SNAKEFMT, SPELL_CSPELL, SPELL_MISSPELL, SPELL_PROSELINT, SQL_SQLFLUFF, SQL_SQL_LINT, SQL_TSQLLINT, SWIFT_SWIFTLINT, TEKTON_TEKTON_LINT, TERRAFORM_CHECKOV, TERRAFORM_KICS, TERRAFORM_TERRAFORM_FMT, TERRAFORM_TERRAGRUNT, TERRAFORM_TERRASCAN, TERRAFORM_TFLINT, TSX_ESLINT, TYPESCRIPT_ES, TYPESCRIPT_PRETTIER, TYPESCRIPT_STANDARD, VBDOTNET_DOTNET_FORMAT, XML_XMLLINT, YAML_V8R, YAML_YAMLLINT
+To receive reports as email, please set variable EMAIL_REPORTER_EMAIL
+
+MegaLinter now collects the files to analyse
+Listing all files in directory [/tmp/lint], then filter with:
+Root dir content:
+- /tmp/lint/.mega-linter.yml
+- /tmp/lint/Makefile
+- /tmp/lint/README.md
+- /tmp/lint/helmfile.yaml
+All found files before filtering:
+- /tmp/lint/.mega-linter.yml
+- /tmp/lint/Makefile
+- /tmp/lint/README.md
+- /tmp/lint/helmfile.yaml
+- /tmp/lint/helmfiles/configmaps.yaml
+- /tmp/lint/helmfiles/helmfile.yaml
+- /tmp/lint/helmfiles/values.yaml
+- File extensions: .yaml, .yml
+Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+Popen(['git', 'ls-files', '--exclude-standard', '--ignored', '--others', '--cached'], cwd=/tmp/lint, universal_newlines=False, shell=None, istream=None)
+- Excluding .gitignored files [0]: 
+Kept [5] files on [7] found files
+Kept files before applying linter filters:
+- /tmp/lint/.mega-linter.yml
+- /tmp/lint/helmfile.yaml
+- /tmp/lint/helmfiles/configmaps.yaml
+- /tmp/lint/helmfiles/helmfile.yaml
+- /tmp/lint/helmfiles/values.yaml
+[Filters] {'name': 'YAML_PRETTIER', 'filter_regex_include': None, 'filter_regex_exclude': None, 'files_sub_directory': None, 'lint_all_files': False, 'lint_all_other_linters_files': False, 'file_extensions': ['.yml', '.yaml'], 'file_names_regex': [], 'file_names_not_ends_with': [], 'file_contains_regex': [], 'file_contains_regex_extensions': []}
+YAML_PRETTIER linter kept 5 files after applying linter filters:
+- /tmp/lint/.mega-linter.yml
+- /tmp/lint/helmfile.yaml
+- /tmp/lint/helmfiles/configmaps.yaml
+- /tmp/lint/helmfiles/helmfile.yaml
+- /tmp/lint/helmfiles/values.yaml
+
++----MATCHING LINTERS---+------------+----------------+------------+
+| Descriptor | Linter   | Criteria   | Matching files | Format/Fix |
++------------+----------+------------+----------------+------------+
+| YAML       | prettier | .yml|.yaml | 5              | yes        |
++------------+----------+------------+----------------+------------+
+
+MegaLinter flavor is "all", no need to check match with linters
+[prettier] command: ['prettier', '--write', '/tmp/lint/.mega-linter.yml', '/tmp/lint/helmfile.yaml', '/tmp/lint/helmfiles/configmaps.yaml', '/tmp/lint/helmfiles/helmfile.yaml', '/tmp/lint/helmfiles/values.yaml']
+[prettier] CWD: /
+[prettier] result: 0 tmp/lint/.mega-linter.yml 213ms
+tmp/lint/helmfile.yaml 158ms
+tmp/lint/helmfiles/configmaps.yaml 57ms
+tmp/lint/helmfiles/helmfile.yaml 69ms
+tmp/lint/helmfiles/values.yaml 112ms
+
+Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=/tmp/lint, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=/tmp/lint, universal_newlines=False, shell=None, istream=<valid stream>)
+Linter version command: ['/node-deps/node_modules/.bin/prettier', '--version']
+Linter version result: 0 2.8.7
+
+[32m✅ Linted [YAML] files with [prettier] successfully - (2.99s)[0m
+- Using [prettier v2.8.7] https://megalinter.io/6.22.2/descriptors/yaml_prettier
+- MegaLinter key: [YAML_PRETTIER]
+- Rules config: identified by [prettier]
+[prettier] .mega-linter.yml
+[36m[prettier] helmfile.yaml - FIXED[0m
+[36m[prettier] helmfiles/configmaps.yaml - FIXED[0m
+[36m[prettier] helmfiles/helmfile.yaml - FIXED[0m
+[prettier] helmfiles/values.yaml
+
+[Text Reporter] Generated TEXT report: /tmp/lint/megalinter-reports/linters_logs/SUCCESS-YAML_PRETTIER.log
+[Post] No commands declared in user configuration
+[Azure Comment Reporter] No Azure Token found, so skipped post of PR comment
+
++----SUMMARY-+----------+---------------+-------+-------+--------+--------------+
+| Descriptor | Linter   | Mode          | Files | Fixed | Errors | Elapsed time |
++------------+----------+---------------+-------+-------+--------+--------------+
+| ✅ YAML    | prettier | list_of_files |     5 |     3 |      0 |        2.99s |
++------------+----------+---------------+-------+-------+--------+--------------+
+
+[34mYou could have same capabilities but better runtime performances if you use a MegaLinter flavor:[0m
+- [ci_light] oxsecurity/megalinter/flavors/ci_light@v6.22.2 (20 linters) https://megalinter.io/6.22.2/flavors/ci_light/
+- [documentation] oxsecurity/megalinter/flavors/documentation@v6.22.2 (48 linters) https://megalinter.io/6.22.2/flavors/documentation/
+- [ruby] oxsecurity/megalinter/flavors/ruby@v6.22.2 (48 linters) https://megalinter.io/6.22.2/flavors/ruby/
+- [rust] oxsecurity/megalinter/flavors/rust@v6.22.2 (48 linters) https://megalinter.io/6.22.2/flavors/rust/
+- [swift] oxsecurity/megalinter/flavors/swift@v6.22.2 (48 linters) https://megalinter.io/6.22.2/flavors/swift/
+- [go] oxsecurity/megalinter/flavors/go@v6.22.2 (50 linters) https://megalinter.io/6.22.2/flavors/go/
+- [java] oxsecurity/megalinter/flavors/java@v6.22.2 (51 linters) https://megalinter.io/6.22.2/flavors/java/
+- [php] oxsecurity/megalinter/flavors/php@v6.22.2 (51 linters) https://megalinter.io/6.22.2/flavors/php/
+- [salesforce] oxsecurity/megalinter/flavors/salesforce@v6.22.2 (51 linters) https://megalinter.io/6.22.2/flavors/salesforce/
+- [terraform] oxsecurity/megalinter/flavors/terraform@v6.22.2 (53 linters) https://megalinter.io/6.22.2/flavors/terraform/
+- [javascript] oxsecurity/megalinter/flavors/javascript@v6.22.2 (57 linters) https://megalinter.io/6.22.2/flavors/javascript/
+- [python] oxsecurity/megalinter/flavors/python@v6.22.2 (59 linters) https://megalinter.io/6.22.2/flavors/python/
+- [dotnet] oxsecurity/megalinter/flavors/dotnet@v6.22.2 (60 linters) https://megalinter.io/6.22.2/flavors/dotnet/
+- [cupcake] oxsecurity/megalinter/flavors/cupcake@v6.22.2 (82 linters) https://megalinter.io/6.22.2/flavors/cupcake/
+
+[GitHub Comment Reporter] No GitHub Token has been found, so skipped post of PR comment
+[Gitlab Comment Reporter] No Gitlab Token found, so skipped post of MR comment
+Start updated Sources Reporter
+Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=/tmp/lint, universal_newlines=False, shell=None, istream=None)
+Popen(['git', 'cat-file', '--batch-check'], cwd=/tmp/lint, universal_newlines=False, shell=None, istream=<valid stream>)
+Updated files :
+helmfile.yaml
+ -helmfiles/configmaps.yaml
+ -helmfiles/helmfile.yaml
+ -megalinter-reports/megalinter.log
+Copied /tmp/lint/helmfile.yaml to /tmp/lint/megalinter-reports/updated_sources/helmfile.yaml
+Copied /tmp/lint/helmfiles/configmaps.yaml to /tmp/lint/megalinter-reports/updated_sources/helmfiles/configmaps.yaml
+Copied /tmp/lint/helmfiles/helmfile.yaml to /tmp/lint/megalinter-reports/updated_sources/helmfiles/helmfile.yaml
+Copied /tmp/lint/megalinter-reports/megalinter.log to /tmp/lint/megalinter-reports/updated_sources/megalinter-reports/megalinter.log
+[Updated Sources Reporter] copied 4 fixed source files in folder /tmp/lint/megalinter-reports/updated_sources.
+Download it from artifacts then copy-paste it in your local repo to apply linters updates
+[32m✅ Successfully linted all files without errors[0m
+Cleared MegaLinter runtime config

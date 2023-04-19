@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+metadata:
+  name: '{{ include ".Values.data.whatever.name" . }}'
+  labels:
+    {{- include ".Values.data.whatever.labels" . | nindent 4 }}
+kind: ConfigMap
+data:
+  VAR_1: "{{ .Values.data.whatever.bootstrap }}"
+  VAR_2: "{{ .Values.data.whatever.keys }}"
+  VAR_3: "{{ .Values.data.whatever.env }}"
+---
+apiVersion: v1
+metadata:
+  name: '{{ include ".Values.data.whatever2.name" . }}'
+  labels:
+    {{- include ".Values.data.whatever2.labels" . | nindent 4 }}
+kind: ConfigMap
+data:
+  VAR_1: |
+    {{- tpl (.Files.Get "file/content.sh") . | nindent 4 }}
+  VAR_2: |
+    {{- tpl (.Files.Get "file/content.py") . | nindent 4 }}
